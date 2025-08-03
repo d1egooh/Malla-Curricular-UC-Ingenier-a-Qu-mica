@@ -1,2 +1,2 @@
-# Malla-Curricular-UC-Ingenier-a-Qu-mica
+# Malla-Curricular-UC-Ingenieria-Qimica
 "Mi malla curricular interactiva"
