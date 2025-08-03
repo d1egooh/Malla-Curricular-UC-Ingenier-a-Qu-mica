@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Curricular Interactiva</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 20px;
+    }
+    h2 {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      border-radius: 8px;
+    }
+    .semestre {
+      margin-bottom: 30px;
+    }
+    .ramo {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 5px;
+      border-radius: 6px;
+      background-color: #f9f9f9;
+      cursor: pointer;
+    }
+    .ramo.completado {
+      background-color: #c8e6c9;
+      text-decoration: line-through;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Malla Curricular Interactiva</h1>
+
+  <div id="malla">
+
+    <div class="semestre">
+      <h2>1° Semestre</h2>
+      <div class="ramo" onclick="toggle(this)">MAT1000 - Precálculo</div>
+      <div class="ramo" onclick="toggle(this)">FIS1503 - Física General I</div>
+      <div class="ramo" onclick="toggle(this)">BIO141C - Biología de la Célula</div>
+      <div class="ramo" onclick="toggle(this)">QIM100 - Química General I</div>
+      <div class="ramo" onclick="toggle(this)">AFG: Ecología Integral</div>
+      <div class="ramo" onclick="toggle(this)">CLG0901 - Taller de Iniciación</div>
+    </div>
+
+    <div class="semestre">
+      <h2>2° Semestre</h2>
+      <div class="ramo" onclick="toggle(this)">MAT1610 - Cálculo I</div>
+      <div class="ramo" onclick="toggle(this)">ING1004 - Desafíos de la Ingeniería</div>
+      <div class="ramo" onclick="toggle(this)">MAT1203 - Álgebra Lineal</div>
+      <div class="ramo" onclick="toggle(this)">BIO143M - Principios Ecológicos y Medio Ambiente</div>
+      <div class="ramo" onclick="toggle(this)">FIL2001 - Filosofía: ¿Para qué?</div>
+    </div>
+
+    <div class="semestre">
+      <h2>3° Semestre</h2>
+      <div class="ramo" onclick="toggle(this)">MAT1620 - Cálculo II</div>
+      <div class="ramo" onclick="toggle(this)">FIS1514 - Dinámica</div>
+      <div class="ramo" onclick="toggle(this)">FIS0154 - Lab. Dinámica</div>
+      <div class="ramo" onclick="toggle(this)">QIM100B - Química General II</div>
+      <div class="ramo" onclick="toggle(this)">IIC1103 - Intro a la Programación</div>
+      <div class="ramo" onclick="toggle(this)">EAE105A - Intro a la Economía</div>
+    </div>
+
+    <div class="semestre">
+      <h2>4° Semestre</h2>
+      <div class="ramo" onclick="toggle(this)">MAT1630 - Cálculo III</div>
+      <div class="ramo" onclick="toggle(this)">MAT1640 - Ecuaciones Diferenciales</div>
+      <div class="ramo" onclick="toggle(this)">FIS1523 - Termodinámica</div>
+      <div class="ramo" onclick="toggle(this)">FIS0152 - Lab. Termodinámica</div>
+      <div class="ramo" onclick="toggle(this)">QIM200 - Química Orgánica Fundamental</div>
+      <div class="ramo" onclick="toggle(this)">AFG: Ciencias Sociales</div>
+    </div>
+
+    <div class="semestre">
+      <h2>5° Semestre</h2>
+      <div class="ramo" onclick="toggle(this)">EYP1113 - Probabilidad y Estadística</div>
+      <div class="ramo" onclick="toggle(this)">FIS1533 - Electricidad y Magnetismo</div>
+      <div class="ramo" onclick="toggle(this)">FIS0153 - Lab. Electricidad y Magnetismo</div>
+      <div class="ramo" onclick="toggle(this)">IIQ2043 - Fisicoquímica</div>
+      <div class="ramo" onclick="toggle(this)">AFG: Salud y Bienestar</div>
+      <div class="ramo" onclick="toggle(this)">Teología</div>
+    </div>
+
+    <div class="semestre">
+      <h2>6° Semestre</h2>
+      <div class="ramo" onclick="toggle(this)">QIM202 - Bioquímica General</div>
+      <div class="ramo" onclick="toggle(this)">IIQ2003 - Fenómenos de Transporte</div>
+      <div class="ramo" onclick="toggle(this)">IIQ2133 - Procesos Químicos</div>
+      <div class="ramo" onclick="toggle(this)">IIQ2930 - Intro a Ing. Gastronómica</div>
+      <div class="ramo" onclick="toggle(this)">AFG: Artes</div>
+    </div>
+
+    <div class="semestre">
+      <h2>7° Semestre</h2>
+      <div class="ramo" onclick="toggle(this)">IIQ2013 - Operaciones Unitarias I</div>
+      <div class="ramo" onclick="toggle(this)">IIQ2023 - Operaciones Unitarias II</div>
+      <div class="ramo" onclick="toggle(this)">IIQ2623 - Microbiología e Higiene de Alimentos</div>
+      <div class="ramo" onclick="toggle(this)">IIQ2723 - Ingeniería de Alimentos</div>
+      <div class="ramo" onclick="toggle(this)">AFG: Humanidades</div>
+    </div>
+
+    <div class="semestre">
+      <h2>8° Semestre</h2>
+      <div class="ramo" onclick="toggle(this)">IIQ2243 - CAPSTONE: Diseño de Procesos Químicos</div>
+      <div class="ramo" onclick="toggle(this)">IIQ2313 - Dinámica y Control de Procesos</div>
+      <div class="ramo" onclick="toggle(this)">IIQ2113 - Diseño de Reactores</div>
+      <div class="ramo" onclick="toggle(this)">IIQ2603 - Ciencia de los Alimentos</div>
+      <div class="ramo" onclick="toggle(this)">IIQ2633 - Química y Análisis de Alimentos</div>
+    </div>
+
+  </div>
+
+  <script>
+    function toggle(element) {
+      element.classList.toggle("completado");
+    }
+  </script>
+
+</body>
+</html>
